@@ -8,7 +8,6 @@ import {
   IconButton,
 } from "@mui/material";
 import { Facebook, Twitter, YouTube, Instagram } from "@mui/icons-material";
-import footerBg from "../assets/images/footer.png";
 import logo from "../assets/images/logo.png";
 
 const Footer = () => {
@@ -21,7 +20,7 @@ const Footer = () => {
         py: 5,
       }}
     >
-      <Container sx={{ maxWidth: "1500px", position: "relative" }} maxWidth={false}>
+      <Container maxWidth={"lg"} sx={{ position: "relative" }}>
         <Box>
           <Box sx={{ display: "flex", justifyContent: "center", pb: "25px" }}>
             <img src={logo} alt="Quantum Pulse Consulting" />
@@ -35,9 +34,10 @@ const Footer = () => {
             opacity: "0.2",
           }}
         ></Box>
-        <Box py={"25px"}>
+        <Box py={"35px"}>
           <Grid item xs={12} md={6}>
             <Box
+              className="footer-links"
               sx={{
                 display: "flex",
                 justifyContent: "space-between",
@@ -45,39 +45,19 @@ const Footer = () => {
                 flexWrap: "wrap",
               }}
             >
-              <Link
-                href="#"
-                color="inherit"
-                sx={{ textDecoration: "none", fontSize: "18px" }}
-              >
+              <Link href="#" color="inherit" sx={{ textDecoration: "none" }}>
                 Quantum Pulse Consulting
               </Link>
-              <Link
-                href="#"
-                color="inherit"
-                sx={{ textDecoration: "none", fontSize: "18px" }}
-              >
+              <Link href="#" color="inherit" sx={{ textDecoration: "none" }}>
                 About Us
               </Link>
-              <Link
-                href="#"
-                color="inherit"
-                sx={{ textDecoration: "none", fontSize: "18px" }}
-              >
+              <Link href="#" color="inherit" sx={{ textDecoration: "none" }}>
                 Experiences
               </Link>
-              <Link
-                href="#"
-                color="inherit"
-                sx={{ textDecoration: "none", fontSize: "18px" }}
-              >
+              <Link href="#" color="inherit" sx={{ textDecoration: "none" }}>
                 Case Studies
               </Link>
-              <Link
-                href="#"
-                color="inherit"
-                sx={{ textDecoration: "none", fontSize: "18px" }}
-              >
+              <Link href="#" color="inherit" sx={{ textDecoration: "none" }}>
                 Contact Us
               </Link>
             </Box>
@@ -103,7 +83,7 @@ const Footer = () => {
             gap: "20px",
           }}
         >
-          <Typography variant="body2">
+          <Typography>
             © 2024 Quantum Pulse Consulting. All Rights Reserved
           </Typography>
           <Box>

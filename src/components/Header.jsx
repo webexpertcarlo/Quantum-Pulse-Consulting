@@ -17,7 +17,7 @@ import redirect from "../assets/images/redirect.svg";
 import logo from "../assets/images/logo.png";
 
 const Header = () => {
-  const matches = useMediaQuery((theme) => theme.breakpoints.up("md"));
+  const matches = useMediaQuery((theme) => theme.breakpoints.up("lg"));
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const toggleDrawer = (open) => (event) => {
